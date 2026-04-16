@@ -180,6 +180,31 @@ game-page > h1 {
     text-align: center;
 }
 
+.itch-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #231f20;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.game-jolt-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #231f20;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
 .video-button {
     width: 100%;
     height: 50px;
@@ -214,9 +239,14 @@ game-page > h1 {
     color: black;
 }
 
-.game-button:active {
-    background-color: #231f20;
-    color: white;
+.itch-button:hover {
+    background-color: #dee980;
+    color: rgb(0, 0, 0);
+}
+
+.game-jolt-button:hover {
+    background-color: #6dce6d;
+    color: rgb(0, 0, 0);
 }
 
 .jam-button:hover {
@@ -224,7 +254,7 @@ game-page > h1 {
     color: black;
 }
 
-.jam-button:active {
+.game-button:active, .jam-button:active, .video-button:active, .itch-button:active, .game-jolt-button:active  {
     background-color: #231f20;
     color: white;
 }
