@@ -2,162 +2,265 @@
 <html lang="en">
 
 <head>
-  <title>Lazy Duck Games</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lazy Duck Games 🦆💤 is a small group of game developers from Italy.">
-  <meta name="keywords" content="game, indie, lazy duck games">
-  <meta name="robots" content="index">
-  <link rel="icon" type="image/x-icon" href="favicon.ico?">
+  <title>Lazy Duck Games | Indie game studio from Italy</title>
+  <meta name="description" content="Lazy Duck Games is a four-person indie game studio from Italy. We're making Deathcoat, and we've released Spinning Tower, Wood Jump and a handful of game jam entries.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Lazy Duck Games">
+  <meta name="theme-color" content="#262626">
+  <link rel="canonical" href="https://lazyduckgames.com/">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lazy Duck Games">
+  <meta property="og:title" content="Lazy Duck Games | Indie game studio from Italy">
+  <meta property="og:description" content="Four friends from Italy making games after hours. Now making Deathcoat.">
+  <meta property="og:url" content="https://lazyduckgames.com/">
+  <meta property="og:image" content="https://lazyduckgames.com/resources/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Deathcoat key art: a girl in a red hood facing a haunted mansion beyond a graveyard gate">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lazy_duck_games">
+  <meta name="twitter:title" content="Lazy Duck Games | Indie game studio from Italy">
+  <meta name="twitter:description" content="Four friends from Italy making games after hours. Now making Deathcoat.">
+  <meta name="twitter:image" content="https://lazyduckgames.com/resources/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="resources/icon-180.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="resources/deathcoat-banner.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://lazyduckgames.com/#studio",
+        "name": "Lazy Duck Games",
+        "url": "https://lazyduckgames.com/",
+        "logo": "https://lazyduckgames.com/resources/icon-512.png",
+        "email": "lazyduckdev@gmail.com",
+        "description": "A four-person indie game studio from Italy.",
+        "foundingLocation": { "@type": "Country", "name": "Italy" },
+        "sameAs": [
+          "https://x.com/lazy_duck_games",
+          "https://www.tiktok.com/@lazy_duck_games",
+          "https://bsky.app/profile/lazyduckgames.bsky.social",
+          "https://www.instagram.com/lazy_duck_games",
+          "https://lazy-duck-games.itch.io/",
+          "https://linktr.ee/lazy_duck_games"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lazyduckgames.com/#website",
+        "url": "https://lazyduckgames.com/",
+        "name": "Lazy Duck Games",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://lazyduckgames.com/#studio" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Deathcoat",
+        "url": "https://lazy-duck-games.itch.io/deathcoat",
+        "image": "https://lazyduckgames.com/resources/deathcoat-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "sameAs": ["https://gamejolt.com/games/deathcoat/1009754"]
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Spinning Tower",
+        "url": "https://play.google.com/store/apps/details?id=com.LazyDuckGames.SpinningTower",
+        "image": "https://lazyduckgames.com/resources/spinning-tower-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Android",
+        "datePublished": "2025"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Wood Jump",
+        "url": "https://play.google.com/store/apps/details?id=com.LazyDuckGames.WoodJump",
+        "image": "https://lazyduckgames.com/resources/wood-jump-banner.png",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Android",
+        "datePublished": "2019"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Bubblington's Pot",
+        "url": "https://lazy-duck-games.itch.io/bubblingtons-pot",
+        "image": "https://lazyduckgames.com/resources/bubblingtons-pot-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Windows",
+        "datePublished": "2025"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Sadie",
+        "url": "https://lazy-duck-games.itch.io/sadie",
+        "image": "https://lazyduckgames.com/resources/sadie-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Android",
+        "datePublished": "2024"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Brain Bound",
+        "url": "https://lazy-duck-games.itch.io/brain-bound",
+        "image": "https://lazyduckgames.com/resources/brain-bound-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Web browser",
+        "datePublished": "2023"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Disdice",
+        "url": "https://lazy-duck-games.itch.io/disdice",
+        "image": "https://lazyduckgames.com/resources/disdice-banner.jpg",
+        "author": { "@id": "https://lazyduckgames.com/#studio" },
+        "gamePlatform": "Web browser",
+        "datePublished": "2023"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <header>
-    <a href="index.html"><img src="resources/banner.png" alt="Lazy Duck Games banner"></a>
-    <div class="contact-links">
-      <p>
-        <a href="mailto:lazyduckdev@gmail.com">
-        <img src="resources/email-icon.png" alt="Email">
-        </a>
-      </p>
-      <p>
-        <a href="https://x.com/lazy_duck_games" target="_blank" rel="noopener noreferrer">
-        <img src="resources/x-icon.svg" alt="X">
-        </a>
-      </p>
-      <p>
-        <a href="https://www.tiktok.com/@lazy_duck_games" target="_blank" rel="noopener noreferrer">
-        <img src="resources/tiktok-icon.svg" alt="TikTok">
-        </a>
-      </p>
-      <p>
-        <a href="https://bsky.app/profile/lazyduckgames.bsky.social" target="_blank" rel="noopener noreferrer">
-          <img src="resources/bluesky-icon.svg" alt="Bluesky">
-        </a>
-      </p>
-      <p>
-        <a href="https://www.instagram.com/lazy_duck_games" target="_blank" rel="noopener noreferrer">
-          <img src="resources/instagram-icon.svg" alt="Instagram">
-        </a>
-      </p>
-    </div>
-  </header>
 
-  <main>
-    <section>
-      <h1>Hello!</h1>
-      <panel>
-        <p>
-          Lazy Duck Games is a small group of four italian game developers who invest their free time in making video games.
-          We constantly improve our technical and design skills by creating new video games.
-          Right now, we’re developing Deathcoat, but we have many good ideas we’d love to explore in the future.
-        </p>
-        <p>
-          We look forward to share with you all our upcoming creations, but in the meantime, feel free to try our old games.
-          Even if they are small and short lived, we crafted them with all our love.
-          Finally, check our <a href="https://linktr.ee/lazy_duck_games" target="_blank" rel="noopener noreferrer">linktree</a> to stay update with all our activities.
-        </p>
-      </panel>
+  <main id="main">
+    <div class="intro">
+      <div class="title-row">
+        <img class="brand" src="resources/duck-mark.png" alt="" width="96" aria-hidden="true">
+        <h1>Lazy Duck Games</h1>
+      </div>
+      <nav aria-label="Lazy Duck Games on social media">
+        <ul class="socials">
+          <li><a href="mailto:lazyduckdev@gmail.com"><img src="resources/email-icon.png" alt="Email us" width="26" height="26"></a></li>
+          <li><a href="https://x.com/lazy_duck_games" target="_blank" rel="noopener noreferrer"><img src="resources/x-icon.svg" alt="X" width="26" height="26"></a></li>
+          <li><a href="https://www.tiktok.com/@lazy_duck_games" target="_blank" rel="noopener noreferrer"><img src="resources/tiktok-icon.svg" alt="TikTok" width="26" height="26"></a></li>
+          <li><a href="https://bsky.app/profile/lazyduckgames.bsky.social" target="_blank" rel="noopener noreferrer"><img src="resources/bluesky-icon.svg" alt="Bluesky" width="26" height="26"></a></li>
+          <li><a href="https://www.instagram.com/lazy_duck_games" target="_blank" rel="noopener noreferrer"><img src="resources/instagram-icon.svg" alt="Instagram" width="26" height="26"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="feature" aria-labelledby="deathcoat-title">
+      <div class="feature-art">
+        <img src="resources/deathcoat-banner.jpg" alt="Deathcoat key art: a girl in a red hood stands before a graveyard gate, a haunted mansion glowing on the hill beyond" width="1920" height="1080" fetchpriority="high">
+      </div>
+      <div class="feature-copy">
+        <p class="status">In development</p>
+        <h2 id="deathcoat-title">Deathcoat</h2>
+        <p>Our biggest project so far. Follow it on itch.io or Game Jolt to hear when it's ready to play.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://lazy-duck-games.itch.io/deathcoat" target="_blank" rel="noopener noreferrer">Follow on itch.io</a>
+          <a class="btn" href="https://gamejolt.com/games/deathcoat/1009754" target="_blank" rel="noopener noreferrer">Follow on Game Jolt</a>
+        </div>
+      </div>
     </section>
-    <section>
-      <h1>Our Main Games</h1>
-      <game>
-        <h2>Deathcoat</h2>
-        <h4>TBD</h4>
-        <img src="resources/deathcoat-banner.png" alt="Deathcoat banner" loading="lazy">
-        <a href="https://lazy-duck-games.itch.io/deathcoat" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="itch-button">Itch.io</button>
-        </a>
-        <a href="https://gamejolt.com/games/deathcoat/1009754" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-jolt-button">Game Jolt</button>
-        </a>
-      </game>
-      <game>
-        <h2>Spinning Tower</h2>
-        <h4>2025</h4>
-        <img src="resources/spinning-tower-banner.png" alt="Spinning Tower banner" loading="lazy">
-        <a href="https://play.google.com/store/apps/details?id=com.LazyDuckGames.SpinningTower" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-button">Get it on Play Store!</button>
-        </a>
-        <a href="https://youtube.com/shorts/QJI7axvA2lY" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="video-button">Gameplay</button>
-        </a>
-      </game>
-      <game>
-        <h2>Wood Jump</h2>
-        <h4>2019</h4>
-        <img src="resources/wood-jump-banner.png" alt="Wood Jump banner" loading="lazy">
-        <a href="https://play.google.com/store/apps/details?id=com.LazyDuckGames.WoodJump" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-button">Get it on Play Store!</button>
-        </a>
-        <a href="https://youtu.be/ozlLX-Kte0U?si=QVdIOrVWTeXo2P5I" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="video-button">Gameplay</button>
-        </a>
-      </game>
+
+    <section class="released" aria-labelledby="released-title">
+      <h2 id="released-title" class="section-title">Released games</h2>
+
+      <article class="game-row">
+        <img src="resources/spinning-tower-banner.jpg" alt="Spinning Tower: a mushroom-roofed tower above the clouds, surrounded by flying cartoon monsters" width="1024" height="500" loading="lazy">
+        <div class="game-copy">
+          <h3>Spinning Tower</h3>
+          <p class="meta">2025, for Android</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.LazyDuckGames.SpinningTower" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+            <a class="btn" href="https://youtube.com/shorts/QJI7axvA2lY" target="_blank" rel="noopener noreferrer">Watch gameplay</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-row">
+        <img src="resources/wood-jump-banner.png" alt="Wood Jump: a pixel-art caveman on a floating log, with a snake, a crocodile and a vulture" width="1024" height="500" loading="lazy">
+        <div class="game-copy">
+          <h3>Wood Jump</h3>
+          <p class="meta">2019, for Android</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.LazyDuckGames.WoodJump" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+            <a class="btn" href="https://youtu.be/ozlLX-Kte0U" target="_blank" rel="noopener noreferrer">Watch gameplay</a>
+          </div>
+        </div>
+      </article>
     </section>
-    <section>
-      <h1>Our Jam Games</h1>
-      <game>
-          <h2>Bubblington's Pot</h2>
-          <h4>Global Game Jam 2025</h4>
-          <img src="resources/bubblingtons-pot-banner.png" alt="Bubblington's Pot banner" loading="lazy">
-          <a href="https://lazy-duck-games.itch.io/bubblingtons-pot" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="game-button">Get the game for Windows!</button>
-          </a>
-          <a href="https://globalgamejam.org/games/2025/bubblingtons-pot-7" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="jam-button">Jam page</button>
-          </a>
-          <a href="https://youtu.be/0J_laaEH0YE?si=dWPuubffgLDB1r79" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="video-button">Gameplay</button>
-          </a>
-      </game>
-      <game>
-        <h2>Sadie</h2>
-        <h4>Global Game Jam 2024</h4>
-        <img src="resources/sadie-banner.png" alt="Sadie banner" loading="lazy">
-        <a href="https://lazy-duck-games.itch.io/sadie" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-button">Get the game for Android!</button>
-        </a>
-        <a href="https://globalgamejam.org/games/2024/sadie-5" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="jam-button">Jam page</button>
-        </a>
-        <a href="https://www.youtube.com/shorts/Y_Qhs23yQYA" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="video-button">Gameplay</button>
-        </a>
-      </game>
-      <game>
-        <h2>Brain Bound</h2>
-        <h4>Ludum Dare 54 - 2023</h4>
-        <img src="resources/brain-bound-banner.png" alt="Brain Bound banner" loading="lazy">
-        <a class="hide-mobile" href="https://lazy-duck-games.itch.io/brain-bound" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-button">Play it on browser!</button>
-        </a>
-        <a href="https://ldjam.com/events/ludum-dare/54/$371521" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="jam-button">Jam page</button>
-        </a>
-        <a href="https://youtu.be/rgDH6v9Z5DY" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="video-button">Gameplay</button>
-        </a>
-      </game>
-      <game>
-        <h2>Disdice</h2>
-        <h4>Bay Area Jam - 2023</h4>
-        <img src="resources/disdice-banner.jpg" alt="Disdice banner" loading="lazy">
-        <a class="hide-mobile" href="https://lazy-duck-games.itch.io/disdice" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="game-button">Play it on browser!</button>
-        </a>
-        <a href="https://itch.io/jam/bay-area-jam-jam/rate/1945095" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="jam-button">Jam page</button>
-        </a>
-        <a href="https://youtu.be/NxzOqi63-04" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="video-button">Gameplay</button>
-        </a>
-      </game>
+
+    <section class="jams" aria-labelledby="jams-title">
+      <h2 id="jams-title" class="section-title">Game jam entries</h2>
+      <p class="section-note">Each one made in a few days, against a jam deadline.</p>
+
+      <div class="jam-grid">
+        <article class="jam">
+          <img src="resources/bubblingtons-pot-banner.jpg" alt="Bubblington's Pot: a three-eyed hooded figure dangling two tiny creatures" width="1025" height="500" loading="lazy">
+          <h3>Bubblington's Pot</h3>
+          <p class="meta">Global Game Jam 2025, for Windows</p>
+          <ul class="links">
+            <li><a href="https://lazy-duck-games.itch.io/bubblingtons-pot" target="_blank" rel="noopener noreferrer">Download</a></li>
+            <li><a href="https://globalgamejam.org/games/2025/bubblingtons-pot-7" target="_blank" rel="noopener noreferrer">Jam page</a></li>
+            <li><a href="https://youtu.be/0J_laaEH0YE" target="_blank" rel="noopener noreferrer">Gameplay</a></li>
+          </ul>
+        </article>
+
+        <article class="jam">
+          <img src="resources/sadie-banner.jpg" alt="Sadie: a grumpy girl in a skull hairclip holding a glowing lipstick" width="1025" height="500" loading="lazy">
+          <h3>Sadie</h3>
+          <p class="meta">Global Game Jam 2024, for Android</p>
+          <ul class="links">
+            <li><a href="https://lazy-duck-games.itch.io/sadie" target="_blank" rel="noopener noreferrer">Download</a></li>
+            <li><a href="https://globalgamejam.org/games/2024/sadie-5" target="_blank" rel="noopener noreferrer">Jam page</a></li>
+            <li><a href="https://www.youtube.com/shorts/Y_Qhs23yQYA" target="_blank" rel="noopener noreferrer">Gameplay</a></li>
+          </ul>
+        </article>
+
+        <article class="jam">
+          <img src="resources/brain-bound-banner.jpg" alt="Brain Bound: bold red letters over a pink cartoon brain" width="1025" height="500" loading="lazy">
+          <h3>Brain Bound</h3>
+          <p class="meta">Ludum Dare 54, 2023, in the browser</p>
+          <ul class="links">
+            <li class="desktop-only"><a href="https://lazy-duck-games.itch.io/brain-bound" target="_blank" rel="noopener noreferrer">Play in browser</a></li>
+            <li><a href="https://ldjam.com/events/ludum-dare/54/$371521" target="_blank" rel="noopener noreferrer">Jam page</a></li>
+            <li><a href="https://youtu.be/rgDH6v9Z5DY" target="_blank" rel="noopener noreferrer">Gameplay</a></li>
+          </ul>
+        </article>
+
+        <article class="jam">
+          <img src="resources/disdice-banner.jpg" alt="Disdice: a cartoon die holding a sceptre next to a fallen yellow pyramid die" width="1024" height="500" loading="lazy">
+          <h3>Disdice</h3>
+          <p class="meta">Bay Area Jam 2023, in the browser</p>
+          <ul class="links">
+            <li class="desktop-only"><a href="https://lazy-duck-games.itch.io/disdice" target="_blank" rel="noopener noreferrer">Play in browser</a></li>
+            <li><a href="https://itch.io/jam/bay-area-jam-jam/rate/1945095" target="_blank" rel="noopener noreferrer">Jam page</a></li>
+            <li><a href="https://youtu.be/NxzOqi63-04" target="_blank" rel="noopener noreferrer">Gameplay</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About us</h2>
+      <p>
+        We're four Italian game developers who spend our free time making video games.
+        Every project is a chance to sharpen our art, code and design, and we have plenty of ideas waiting after Deathcoat.
+      </p>
+      <p>
+        Our older games are small and short, but we made each one with care. Give them a try, and find all our channels on
+        <a href="https://linktr.ee/lazy_duck_games" target="_blank" rel="noopener noreferrer">Linktree</a>.
+      </p>
     </section>
   </main>
+
+  <footer class="site-footer">
+  </footer>
 </body>
 </html>
